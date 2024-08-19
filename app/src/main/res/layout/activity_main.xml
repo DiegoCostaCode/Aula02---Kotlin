@@ -8,67 +8,45 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/id1_resposta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2   +   3 ="
+        android:text="-"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.222" />
+        tools:layout_editor_absoluteX="214dp"
+        tools:layout_editor_absoluteY="603dp" />
 
-    <TextView
-        android:id="@+id/textView"
+    <Button
+        android:id="@+id/buttonYdown"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="   –   = "
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.292" />
+        android:text="Y Down"
+        tools:layout_editor_absoluteX="247dp"
+        tools:layout_editor_absoluteY="430dp" />
 
     <Button
         android:id="@+id/buttonXup"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:text="X Up"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="374dp" />
+
+    <Button
+        android:id="@+id/testar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="X Up"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.281"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.428" />
+        android:text="Testar"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="519dp" />
 
     <Button
         android:id="@+id/buttonXdown"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="X Down"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.288"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.53" />
-
-    <TextView
-        android:id="@+id/id1_resultadoX"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="X"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.42"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.222" />
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="430dp" />
 
     <TextView
         android:id="@+id/id2_resultadoX"
@@ -76,112 +54,124 @@
         android:layout_height="wrap_content"
         android:text="X"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.408"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id1_resultadoX"
-        app:layout_constraintVertical_bias="0.016" />
-
-    <TextView
-        android:id="@+id/id1_resultadoY"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Y"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="105dp" />
 
     <TextView
         android:id="@+id/id2_resultadoY"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="18dp"
+        android:layout_height="38dp"
         android:text="Y"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id1_resultadoY"
-        app:layout_constraintVertical_bias="0.016" />
+        tools:layout_editor_absoluteX="278dp"
+        tools:layout_editor_absoluteY="107dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:text="X+"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText5"
+        android:layout_width="56dp"
+        android:layout_height="37dp"
+        android:hint="hint"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="279dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:text="Y="
+        android:textAlignment="center"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="281dp"
+        tools:layout_editor_absoluteY="186dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText2"
+        android:layout_width="56dp"
+        android:layout_height="41dp"
+        android:hint="hint"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="182dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:text="Y="
+        android:textAlignment="center"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="278dp"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText3"
+        android:layout_width="56dp"
+        android:layout_height="39dp"
+        android:hint="hint"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="214dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText"
+        android:layout_width="56dp"
+        android:layout_height="40dp"
+        android:hint="hint"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="214dp"
+        tools:layout_editor_absoluteY="279dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:text="X+"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="279dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:text="Y = "
+        android:textAlignment="center"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="105dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:text="X = "
+        android:textAlignment="center"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="105dp" />
 
     <Button
         android:id="@+id/buttonYup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Y Up"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.437"
-        app:layout_constraintStart_toEndOf="@+id/buttonXup"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.428" />
-
-    <Button
-        android:id="@+id/buttonYdown"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Y Down"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.429"
-        app:layout_constraintStart_toEndOf="@+id/buttonXdown"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.53" />
-
-    <TextView
-        android:id="@+id/id1_conta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="37"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.761"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.222" />
-
-    <TextView
-        android:id="@+id/id2_conta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="-4"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.712"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.292" />
-
-    <TextView
-        android:id="@+id/id1_resposta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="-"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.063" />
-
-    <Button
-        android:id="@+id/testar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Testar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.701" />
+        tools:layout_editor_absoluteX="247dp"
+        tools:layout_editor_absoluteY="374dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
